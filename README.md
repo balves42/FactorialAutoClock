@@ -1,6 +1,27 @@
-## Factorial Auto Clock
+# Factorial Auto Clock
 
-A selenium bot for clocking in or out in factorialhr.com.
+A selenium bot for clocking in/out and break start/end in factorialhr.com.
+
+## About this fork
+
+Since i also wanted to break start/end and the original project didn't support it, i added this and some other features:
+* Ability to load vacation and holiday list to avoid invalid clocks/break
+* Before using the clock out or breaks, check if the user has clocked in
+* Updated usage so the script can be called with new arguments
+
+### Updated CLI options
+
+-p will run the program with a random stop from 3 to 7 minutes before clocking in or out. It is done that way because so you don't file your shift at the same time every day.
+
+-h will run the program in headless mode so it doesn't open a browser window when it is going to file a shift.
+
+-break_start will start a break
+
+-break_end will end a break
+
+-clock_in will clock in
+
+-clock_out will clock out
 
 ### How does it work
 
